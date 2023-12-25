@@ -1,0 +1,351 @@
+<!-- about -->
+{% for block in section.blocks %}
+  {% if block.type == 'about' %}
+    <div class="welcome">
+      <div class="container">
+        <h3 class="w3layouts_head">{{ block.settings.title }}
+          <span>{{ block.settings.subtitle }}</span>
+        </h3>
+        <p class="w3_para">{{ block.settings.description }}</p>
+        <div class="w3ls_news_grids">
+          <div class="col-md-6 w3_agile_about_grid_left">
+            <h3>{{ block.settings.heading }}</h3>
+            <p>
+              <i>{{ block.settings.paragraph }}</i>
+              {{ block.settings.subparagraph }}</p>
+          </div>
+          <div class="col-md-6 w3_agile_about_grid_right">
+            {% for block in section.blocks %}
+              {% if block.type == 'skillbar' %}
+                <div class="skillbar" data-percent="{{ block.settings.width }}">
+                  <span class="skillbar-title" style="background: {{ block.settings.heading_color }};">{{ block.settings.heading }}</span>
+                  <p class="skillbar-bar" style="background:{{ block.settings.heading_bg_color }} ; width: {{ block.settings.width }};"></p>
+                  <span class="skill-bar-percent">{{ block.settings.width }}</span>
+                </div>
+                <!-- End Skill Bar -->
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <script>
+            		$(document).ready(function(){
+            			
+            			$('.skillbar').skillBars({
+            				from: 0,
+            				speed: 4000, 
+            				interval: 100,
+            				decimals: 0,
+            			});
+            			
+            		});
+          </script>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- about-bottom -->
+{% for block in section.blocks %}
+  {% if block.type == 'about_bottom' %}
+    <div class="about-bottom" style="width:100%;">
+      <div class="container">
+        <h3>
+          <span>{{ block.settings.heading }}</span>
+          {{ block.settings.subheading }}</h3>
+        <div class="agileits_w3layouts_learn_more agileits_learn_more hvr-radial-out">
+          <a
+            href="#"
+            data-toggle="modal"
+            data-target="#myModal">{{ block.settings.button_text }}</a>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //about-bottom -->
+<!-- bootstrap-pop-up -->
+{% for block in section.blocks %}
+  {% if block.type == 'pop_up' %}
+    <div
+      class="modal video-modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            Events Planning
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <section>
+            <div class="modal-body">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt=" "
+                  class="img-responsive"
+                  loading="lazy"
+                  width="your_width_value"
+                  height="your_height_value" />
+              {% endif %}
+              <p>Ut enim ad minima veniam, quis nostrum      
+							exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem 
+							vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam nihil molestiae consequatur, vel illum qui 
+							dolorem eum fugiat quo voluptas nulla pariatur.
+                <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit      
+								esse quam nihil molestiae consequatur.</i>
+              </p>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //bootstrap-pop-up -->
+<!-- team -->
+{% for block in section.blocks %}
+  {% if block.type == 'team' %}
+    <div class="welcome">
+      <div class="container">
+        <h3 class="w3layouts_head">{{ block.settings.heading }}<span>{{ block.settings.subheading }}</span>
+        </h3>
+        <p class="w3_para">{{ block.settings.description }}</p>
+        <div class="w3ls_news_grids w3_agileits_team_grids">
+          {% for block in section.blocks %}
+            {% if block.type == 'agile_info' %}
+              <div class="col-md-3 w3_agileits_team_grid">
+                <div class="w3layouts_news_grid">
+                  {% if block.settings.image != blank %}
+                    <img
+                      src="{{ block.settings.image | image_url }}"
+                      alt=" "
+                      class="img-responsive"
+                      loading="lazy"
+                      width="your_width_value"
+                      height="your_height_value" />
+                  {% endif %}
+                  <div class="w3layouts_news_grid_pos">
+                    <div class="wthree_text agileinfo_about_text">
+                      <ul class="agileits_social_list">
+                        <li>
+                          <a href="#" class="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="dribbble">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <h4>{{ block.settings.heading }}</h4>
+                <p>{{ block.settings.description }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //team -->
+{% schema %}
+{
+  "name": "about-page",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": "image background for about"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "about",
+      "name": "about",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "subtitle"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading",
+          "default": "Pellentesque a ligula nec dui ornare pulvinar in non sem condimentum erat"
+        },
+        {
+          "type": "text",
+          "id": "paragraph",
+          "label": "paragraph",
+          "default": "In eleifend nisl fermentum bibendum euismod. Pellentesque ac mi quis tortor consequat scelerisque."
+        },
+        {
+          "type": "text",
+          "id": "subparagraph",
+          "label": "subparagraph",
+          "default": "Sed eros urna, rhoncus nec tortor quis, pretium vestibulum purus. Nunc quis augue nibh. Proin non enim non nulla scelerisque scelerisque vitae non est. Quisque iaculis leo at lacus malesuada mattis."
+        }
+      ]
+    },
+    {
+      "type": "skillbar",
+      "name": "skillbar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "heading_color",
+          "label": "heading color"
+        },
+        {
+          "type": "text",
+          "id": "heading_bg_color",
+          "label": "heading background color"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "width"
+        }
+      ]
+    },
+    {
+      "type": "about_bottom",
+      "name": "about_bottom",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "button_text",
+          "default": "Read More"
+        }
+      ]
+    },
+    {
+      "type": "pop_up",
+      "name": "pop_up",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        }
+      ]
+    },
+    {
+      "type": "team",
+      "name": "team",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+        }
+      ]
+    },
+    {
+      "type": "agile_info",
+      "name": "agile_info",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "about-page"
+    }
+  ]
+}
+{% endschema %}
+{% style %}
+  .about-bottom {
+    background: url('{{ section.settings.image_bg | image_url }}') no-repeat 0 0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 5em 0;
+  }
+{% endstyle %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

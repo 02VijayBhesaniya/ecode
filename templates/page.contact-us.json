@@ -1,0 +1,159 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d1cb8c7e-2f1a-4eda-967c-0a03b72506a0": {
+      "type": "banner-for-services",
+      "blocks": {
+        "cbfe58ed-c670-4cac-9992-92decf905288": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "home",
+            "icon-class-text": "house-chimney",
+            "link": "shopify://pages/home"
+          }
+        },
+        "6a436897-3a3b-4287-b8d8-b8aafb8fc340": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "services",
+            "icon-class-text": "cog",
+            "link": "shopify://pages/services"
+          }
+        },
+        "a2d6a6c7-41bf-40dc-8d38-e0ce65e6b6f6": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "about us",
+            "icon-class-text": "info-circle",
+            "link": "shopify://pages/about-us"
+          }
+        },
+        "61a78408-cc76-406c-bc92-4bc46cfb9ac4": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "our work",
+            "icon-class-text": "building-o",
+            "link": "shopify://pages/work"
+          }
+        },
+        "15ed4c05-3fb8-4c3c-a60f-84e4193cbe1c": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "contact us",
+            "icon-class-text": "envelope-o",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "a9cb2441-debd-43b6-8698-a8b65a2e3d27": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "facebook"
+          }
+        },
+        "9519a8c0-f097-4e96-9938-89d0bc277d6c": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "twitter"
+          }
+        },
+        "ccf2d213-486d-405d-85a4-164ee0d97427": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "dribbble"
+          }
+        },
+        "a0c19060-2225-4b92-8304-bcda861c45ea": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "vimeo-v"
+          }
+        }
+      },
+      "block_order": [
+        "cbfe58ed-c670-4cac-9992-92decf905288",
+        "6a436897-3a3b-4287-b8d8-b8aafb8fc340",
+        "a2d6a6c7-41bf-40dc-8d38-e0ce65e6b6f6",
+        "61a78408-cc76-406c-bc92-4bc46cfb9ac4",
+        "15ed4c05-3fb8-4c3c-a60f-84e4193cbe1c",
+        "a9cb2441-debd-43b6-8698-a8b65a2e3d27",
+        "9519a8c0-f097-4e96-9938-89d0bc277d6c",
+        "ccf2d213-486d-405d-85a4-164ee0d97427",
+        "a0c19060-2225-4b92-8304-bcda861c45ea"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/banner.jpg"
+      }
+    },
+    "84cbb486-abc5-4db9-87e1-9ee374c1ea3e": {
+      "type": "contact_us-page",
+      "blocks": {
+        "c45fc624-2e92-4bdd-8294-2ec6fdc74fc6": {
+          "type": "contact",
+          "settings": {
+            "heading": "Contact",
+            "subheading": "Us",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "6be85d7f-2a23-4d6c-a32c-82d9fc941edb": {
+          "type": "contact_detail",
+          "settings": {
+            "heading": "Find",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "d05fd878-4edc-4aef-97fe-f3d73ec96508": {
+          "type": "contact_detail_info",
+          "settings": {
+            "icon_class": "phone",
+            "heading": "Phone",
+            "detail": "+12 5842 544 971",
+            "detail1": "+12 4267 583 719",
+            "detail_url": ""
+          }
+        },
+        "5e08bbf8-3a95-432b-87ff-5a5cef55970a": {
+          "type": "contact_detail_info",
+          "settings": {
+            "icon_class": "location-dot",
+            "heading": "Office Address",
+            "detail": "New York,Bronx,Morris Park",
+            "detail1": "5280 Wetzel Lane Grand Rapids",
+            "detail_url": ""
+          }
+        },
+        "2bfb9bf9-186f-4426-991f-b3da4c6d8169": {
+          "type": "contact_detail_info",
+          "settings": {
+            "icon_class": "envelope",
+            "heading": "Email",
+            "detail": "mail@example1.com",
+            "detail1": "mail@example2.com",
+            "detail_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "c45fc624-2e92-4bdd-8294-2ec6fdc74fc6",
+        "6be85d7f-2a23-4d6c-a32c-82d9fc941edb",
+        "d05fd878-4edc-4aef-97fe-f3d73ec96508",
+        "5e08bbf8-3a95-432b-87ff-5a5cef55970a",
+        "2bfb9bf9-186f-4426-991f-b3da4c6d8169"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d1cb8c7e-2f1a-4eda-967c-0a03b72506a0",
+    "84cbb486-abc5-4db9-87e1-9ee374c1ea3e"
+  ]
+}

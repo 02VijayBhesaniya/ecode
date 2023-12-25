@@ -1,0 +1,103 @@
+<div class="portfolio">
+  <div class="container">
+    <h3 class="w3layouts_head">{{ section.settings.heading }}<span>{{ section.settings.subheading }}</span>
+    </h3>
+    <p class="w3_para">{{ section.settings.description }}</p>
+    <div class="main">
+      {% for block in section.blocks %}
+        {% if block.type == 'work_page' %}
+          <div class="view view-seventh">
+            <a
+              href="{{ block.settings.image }}"
+              rel="title"
+              class="b-link-stripe b-animate-go  thickbox">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt=""
+                  loading="lazy"
+                  width="your_width_value"
+                  height="your_height_value">
+              {% endif %}
+              <div class="mask">
+                <h2>{{ block.settings.heading }}</h2>
+                <p>{{ block.settings.description }}</p>
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+<!-- //portfolio -->
+<!-- pop-up-script -->
+<script src="{{ 'jquery.chocolat.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+  	$('.view-seventh a').Chocolat();
+  });
+</script>
+<!-- //pop-up-script -->
+{% schema %}
+{
+  "name": "work page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "heading",
+      "default": "Our"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "subheading",
+      "default": "Work"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "description",
+      "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "work_page",
+      "name": "work_page",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading",
+          "default": "Events"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "work-page"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,235 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "b1f4ac94-a34b-4ba5-8f20-dd345769dcce": {
+      "type": "banner-for-services",
+      "blocks": {
+        "e47f53a6-92a0-460d-bdc3-773b82537d67": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "home",
+            "icon-class-text": "house-chimney",
+            "link": "shopify://pages/home"
+          }
+        },
+        "eb3321dc-f350-4dd8-980f-6f84a8821387": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "services",
+            "icon-class-text": "cog",
+            "link": "shopify://pages/services"
+          }
+        },
+        "e8e07aed-fee6-46bd-a843-3ddd9adaa347": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "about us",
+            "icon-class-text": "info-circle",
+            "link": "shopify://pages/about-us"
+          }
+        },
+        "e9948537-d40b-4be4-9f64-868c9e636555": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "our work",
+            "icon-class-text": "building-o",
+            "link": "shopify://pages/work"
+          }
+        },
+        "f4adc876-5942-4c93-9f47-a30233114cd4": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "contact us",
+            "icon-class-text": "envelope-o",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "f523c691-b5fa-4795-90db-21a5f9263958": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "facebook"
+          }
+        },
+        "616d41d3-2918-499e-8a38-660cccfed800": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "twitter"
+          }
+        },
+        "f1ca351f-728c-4126-91ed-3d99b855461f": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "dribbble"
+          }
+        },
+        "3dbd69a9-e334-46b8-bb80-7a2c2950c617": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "vimeo-v"
+          }
+        }
+      },
+      "block_order": [
+        "e47f53a6-92a0-460d-bdc3-773b82537d67",
+        "eb3321dc-f350-4dd8-980f-6f84a8821387",
+        "e8e07aed-fee6-46bd-a843-3ddd9adaa347",
+        "e9948537-d40b-4be4-9f64-868c9e636555",
+        "f4adc876-5942-4c93-9f47-a30233114cd4",
+        "f523c691-b5fa-4795-90db-21a5f9263958",
+        "616d41d3-2918-499e-8a38-660cccfed800",
+        "f1ca351f-728c-4126-91ed-3d99b855461f",
+        "3dbd69a9-e334-46b8-bb80-7a2c2950c617"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/banner.jpg"
+      }
+    },
+    "26ba2633-2e1b-4680-ae39-e6b7c4c9acca": {
+      "type": "services-page",
+      "blocks": {
+        "f1fd39b9-3778-432d-a756-d7a29fd8f9bd": {
+          "type": "banner_bottom",
+          "settings": {
+            "heading": "Our Special",
+            "subheading": "Services",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "ed24826d-4bd4-4017-92ae-b44d6f3b67a6": {
+          "type": "banner_services",
+          "settings": {
+            "heading": "Ornare Aliquet",
+            "description": "Vivamus hendrerit non mauris eget consectetur. Sed placerat metus vitae nisi porttitor tristique. Sed iaculis dolor posuere posuere tincidunt.",
+            "image": "shopify://shop_images/7.jpg"
+          }
+        },
+        "a68bbced-631c-452f-9cc9-0ad1db15413c": {
+          "type": "banner_services",
+          "settings": {
+            "heading": "Hendrerit Mauris",
+            "description": "Vivamus hendrerit non mauris eget consectetur. Sed placerat metus vitae nisi porttitor tristique. Sed iaculis dolor posuere posuere tincidunt.",
+            "image": "shopify://shop_images/8.jpg"
+          }
+        },
+        "66d71195-3457-474c-bc9d-e63d707986cb": {
+          "type": "banner_services",
+          "settings": {
+            "heading": "Iaculis Dolor",
+            "description": "Vivamus hendrerit non mauris eget consectetur. Sed placerat metus vitae nisi porttitor tristique. Sed iaculis dolor posuere posuere tincidunt.",
+            "image": "shopify://shop_images/9.jpg"
+          }
+        },
+        "9eacfda6-4e76-4f0e-818a-428cd9ae70e4": {
+          "type": "offer",
+          "settings": {
+            "heading": "What We",
+            "subheading": "Offer",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "56873280-e581-4bbb-845d-52dda72c4c1b": {
+          "type": "banner_offer",
+          "settings": {
+            "number_background": "01",
+            "heading": "lobortis sem ornare",
+            "description": "Praesent nec blandit lorem, et facilisis mi. Ut fringilla massa massa,id consequat eros iaculis quis."
+          }
+        },
+        "43b9f310-0b62-424f-9e60-475375439b1a": {
+          "type": "banner_offer",
+          "settings": {
+            "number_background": "02",
+            "heading": "blandit lorem",
+            "description": "Praesent nec blandit lorem, et facilisis mi. Ut fringilla massa massa,id consequat eros iaculis quis."
+          }
+        },
+        "09ff2159-7e24-4036-8996-d308af4c607b": {
+          "type": "banner_offer",
+          "settings": {
+            "number_background": "03",
+            "heading": "consequat eros",
+            "description": "Praesent nec blandit lorem, et facilisis mi. Ut fringilla massa massa,id consequat eros iaculis quis."
+          }
+        },
+        "71ba037e-dcc4-46b8-8165-75dab897cf5b": {
+          "type": "banner_offer",
+          "settings": {
+            "number_background": "04",
+            "heading": "fringilla massa",
+            "description": "Praesent nec blandit lorem, et facilisis mi. Ut fringilla massa massa,id consequat eros iaculis quis."
+          }
+        },
+        "9dc155d7-1a0d-4e2e-99f2-53b3ec079e3d": {
+          "type": "banner_bottom_second",
+          "settings": {
+            "image": "shopify://shop_images/13.jpg"
+          }
+        },
+        "fecb4998-ed2a-4c80-bf78-5bc359aa83b4": {
+          "type": "banner_detail",
+          "settings": {
+            "heading": "20 March 2017",
+            "title": "UT MAXIMUS PRETIUM",
+            "icon-class": "globe",
+            "description": "Morbi sollicitudin odio massa, et rutrum sem rutrum in.Duis elementum turpis ultricies, finibus leo."
+          }
+        },
+        "427aabf0-1287-427d-a6eb-2eb589e2818c": {
+          "type": "banner_detail",
+          "settings": {
+            "heading": "25 March 2017",
+            "title": "ALIQUAM FAUCIBUS",
+            "icon-class": "map",
+            "description": "Morbi sollicitudin odio massa, et rutrum sem rutrum in.Duis elementum turpis ultricies, finibus leo."
+          }
+        },
+        "5d259a42-5ab4-4f4f-ba15-306adf8e7f56": {
+          "type": "banner_detail",
+          "settings": {
+            "heading": "30 March 2017",
+            "title": "MAURIS VITAE VOLUT",
+            "icon-class": "pie-chart",
+            "description": "Morbi sollicitudin odio massa, et rutrum sem rutrum in.Duis elementum turpis ultricies, finibus leo."
+          }
+        },
+        "8c4cba26-4e9c-4415-92ad-9c35b7bf3d44": {
+          "type": "pop_up",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f1fd39b9-3778-432d-a756-d7a29fd8f9bd",
+        "ed24826d-4bd4-4017-92ae-b44d6f3b67a6",
+        "a68bbced-631c-452f-9cc9-0ad1db15413c",
+        "66d71195-3457-474c-bc9d-e63d707986cb",
+        "9eacfda6-4e76-4f0e-818a-428cd9ae70e4",
+        "56873280-e581-4bbb-845d-52dda72c4c1b",
+        "43b9f310-0b62-424f-9e60-475375439b1a",
+        "09ff2159-7e24-4036-8996-d308af4c607b",
+        "71ba037e-dcc4-46b8-8165-75dab897cf5b",
+        "9dc155d7-1a0d-4e2e-99f2-53b3ec079e3d",
+        "fecb4998-ed2a-4c80-bf78-5bc359aa83b4",
+        "427aabf0-1287-427d-a6eb-2eb589e2818c",
+        "5d259a42-5ab4-4f4f-ba15-306adf8e7f56",
+        "8c4cba26-4e9c-4415-92ad-9c35b7bf3d44"
+      ],
+      "settings": {
+        "image_bg": "shopify://shop_images/footer.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b1f4ac94-a34b-4ba5-8f20-dd345769dcce",
+    "26ba2633-2e1b-4680-ae39-e6b7c4c9acca"
+  ]
+}

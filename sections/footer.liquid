@@ -1,0 +1,216 @@
+<div class="footer">
+  <div class="container">
+    <h2>
+      <a href="index.html">{{ section.settings.heading }}</a>
+    </h2>
+    <h3>{{ section.settings.number }}</h3>
+    <form action="#" method="post">
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email..."
+        required=""
+      >
+      <input type="submit" value=" ">
+    </form>
+    <div class="agileits_w3three_nav">
+      <div class="agileits_w3three_nav_left">
+        <ul>
+          {% for link in section.settings.menu.links %}
+            <li class="m_nav">
+              <a href="{{ link.url }}">
+                <span class="menu_text" data-letters="{{ link.title }}">{{ link.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="agileits_w3three_nav_right">
+        <ul class="agileits_social_list">
+          {% for block in section.blocks %}
+            {% if block.type == 'media_icon' %}
+              <li>
+                <a href="#" class="{{ block.settings.media_icon_class_text }}">
+                  <i class="fa fa-{{ block.settings.media_icon_class_text }}" aria-hidden="true"></i>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <p>
+      {{ section.settings.copyright_text }}
+      <a href="http://w3layouts.com/">{{ section.settings.company_name }}</a>
+    </p>
+  </div>
+  <a
+    href="#"
+    id="toTop"
+    style="display: inline;"
+  >
+    <span id="toTopHover" style="opacity: 1;"></span>To Top</a
+  >
+</div>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+  	$(".scroll").click(function(event){
+  		event.preventDefault();
+  		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  	});
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+  	/*
+  		var defaults = {
+  		containerID: 'toTop', // fading element id
+  		containerHoverID: 'toTopHover', // fading element hover id
+  		scrollSpeed: 1200,
+  		easingType: 'linear'
+  		};
+  	*/
+
+  	$().UItoTop({ easingType: 'easeOutQuart' });
+
+  	});
+</script>
+{% schema %}
+{
+  "name": "footer section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": " background image for footer"
+    },
+    {
+      "type": "image_picker",
+      "id": "submit_button",
+      "label": " submit button for footer"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "text",
+      "id": "number",
+      "label": "number"
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "copyright text"
+    },
+    {
+      "type": "text",
+      "id": "company_name",
+      "label": "company name"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "Header Menu"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image for arrow"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu_item",
+      "name": "menu item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu-text",
+          "label": "menu-text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "link"
+        }
+      ]
+    },
+    {
+      "type": "media_icon",
+      "name": "media icon",
+      "settings": [
+        {
+          "type": "text",
+          "id": "media_icon_class_text",
+          "label": "media_icon_class_text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "footer section"
+    }
+  ]
+}
+{% endschema %}
+{% style %}
+  .footer {
+    background: url('{{ section.settings.image_bg | image_url }}') no-repeat 0 0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 750px;
+    background-attachment: fixed;
+    padding: 5em 0;
+  }
+  .quicklinks-agile-info-top:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer input[type="submit"] {
+    outline: none;
+    width: 15%;
+    background: url('{{ section.settings.submit_button | image_url }}') no-repeat center center #cf2d50;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 0;
+  }
+  #toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url('{{ section.settings.image | image_url }}') no-repeat 0 0;
+  }
+  #toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+  }
+{% endstyle %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

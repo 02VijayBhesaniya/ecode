@@ -1,0 +1,209 @@
+{
+  "sections": {
+    "54acf408-d785-4e04-8e3f-b38fbefacf00": {
+      "type": "header-section",
+      "blocks": {
+        "94818752-3fae-4de0-a093-201b9bdb984c": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "facebook"
+          }
+        },
+        "810489a7-d577-487b-b7a6-1af484bb0f3a": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "twitter"
+          }
+        },
+        "ec8b3200-5efd-4e97-bcca-60a46e67d877": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "dribbble"
+          }
+        },
+        "697fdf06-04b7-4a8b-b5c2-274406d72667": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "vimeo-v"
+          }
+        },
+        "f6046917-a1bf-4a4a-acc4-ba8cbe293202": {
+          "type": "slider",
+          "settings": {
+            "title": "Let professionals run your event!",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi"
+          }
+        },
+        "93c55d51-e6c6-4723-9bb2-5674b99e3bd6": {
+          "type": "slider",
+          "settings": {
+            "title": "Let professionals run your event!",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi"
+          }
+        },
+        "46ec69a4-e797-431f-8d43-54df6a095cf5": {
+          "type": "slider",
+          "settings": {
+            "title": "Let professionals run your event!",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi"
+          }
+        }
+      },
+      "block_order": [
+        "94818752-3fae-4de0-a093-201b9bdb984c",
+        "810489a7-d577-487b-b7a6-1af484bb0f3a",
+        "ec8b3200-5efd-4e97-bcca-60a46e67d877",
+        "697fdf06-04b7-4a8b-b5c2-274406d72667",
+        "f6046917-a1bf-4a4a-acc4-ba8cbe293202",
+        "93c55d51-e6c6-4723-9bb2-5674b99e3bd6",
+        "46ec69a4-e797-431f-8d43-54df6a095cf5"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/banner.jpg",
+        "menu": "main-menu"
+      }
+    },
+    "f25fdd94-7b98-4d96-a4f3-2514e2e87397": {
+      "type": "home-page",
+      "blocks": {
+        "2ca9ffb3-1b7e-4299-bf28-9476c216625a": {
+          "type": "banner-bottom",
+          "settings": {
+            "title": "Welcome To Our",
+            "subtitle": "Events",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "56fd69a1-29f4-4c10-9afa-98e9c47bfbb1": {
+          "type": "animation-banner",
+          "settings": {
+            "icon-class-text": "cake-candles",
+            "heading": "Birthdays",
+            "description": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+          }
+        },
+        "3aae4375-f322-4b73-ab9c-335bf9a325af": {
+          "type": "animation-banner",
+          "settings": {
+            "icon-class-text": "heart",
+            "heading": "Wedding",
+            "description": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+          }
+        },
+        "b14cfaae-604b-45f1-b450-c8480d7c4233": {
+          "type": "animation-banner",
+          "settings": {
+            "icon-class-text": "snowflake",
+            "heading": "Corporate",
+            "description": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+          }
+        },
+        "4b4c0503-6a40-4fcc-b6ae-304b81723157": {
+          "type": "special_deal",
+          "settings": {
+            "title": "Our",
+            "subtitle": "Services",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "4784e1e4-a506-4742-a3fc-e205797c66b9": {
+          "type": "special_deal_image",
+          "settings": {
+            "image_special_deal": "shopify://shop_images/4.jpg",
+            "heading": "Party Locations",
+            "description": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+          }
+        },
+        "fbb76890-55fe-47b3-ad8a-334b38dea019": {
+          "type": "special_deal_image",
+          "settings": {
+            "image_special_deal": "shopify://shop_images/5.jpg",
+            "heading": "Catering & Food",
+            "description": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+          }
+        },
+        "d8b8fa78-8ec6-4805-a2c2-f163be00d778": {
+          "type": "special_deal_image",
+          "settings": {
+            "image_special_deal": "shopify://shop_images/9.jpg",
+            "heading": "Decor & Decorations",
+            "description": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+          }
+        },
+        "7ae296bd-93f9-40e9-8ac4-a36094688705": {
+          "type": "quicklink",
+          "settings": {
+            "title": "Quick",
+            "subtitle": "Links",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "a28f95dd-53f6-431d-8b9e-dc658cc32fc0": {
+          "type": "quicklink_info",
+          "settings": {
+            "image": "shopify://shop_images/1.jpg",
+            "heading": "Birthdays Specials",
+            "info_link": "Party Locations",
+            "info_link1": "Catering & Food",
+            "info_link2": "Party Rentals & Sales",
+            "info_link3": "Party Supplies & Favors",
+            "info_link4": "Entertainment & Entertainers",
+            "info_link5": "Photographers & Videographers",
+            "info_link6": "Balloons & Flowers",
+            "info_link7": "Decor & Decorations"
+          }
+        },
+        "5b5781b4-a198-4e2c-af69-cd6126928571": {
+          "type": "quicklink_info",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg",
+            "heading": "Wedding Parties",
+            "info_link": "Wedding & Engagement Rings",
+            "info_link1": "Bridal Gowns",
+            "info_link2": "Wedding Cakes",
+            "info_link3": "Photo & Video",
+            "info_link4": "Wedding Officiants",
+            "info_link5": "Ceremony Locations",
+            "info_link6": "Balloons & Flowers",
+            "info_link7": "Limos & Transportation"
+          }
+        },
+        "15cb3c00-d579-434e-84f0-33d428bbe632": {
+          "type": "quicklink_info",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "heading": "Corporate Events",
+            "info_link": "Party Services",
+            "info_link1": "Locations & Venues",
+            "info_link2": "Catering & Food",
+            "info_link3": "Party Rentals & Sales",
+            "info_link4": "Entertainment & Entertainers",
+            "info_link5": "Photographers & Videographers",
+            "info_link6": "Music",
+            "info_link7": "Decorations & Centerpieces"
+          }
+        }
+      },
+      "block_order": [
+        "2ca9ffb3-1b7e-4299-bf28-9476c216625a",
+        "56fd69a1-29f4-4c10-9afa-98e9c47bfbb1",
+        "3aae4375-f322-4b73-ab9c-335bf9a325af",
+        "b14cfaae-604b-45f1-b450-c8480d7c4233",
+        "4b4c0503-6a40-4fcc-b6ae-304b81723157",
+        "4784e1e4-a506-4742-a3fc-e205797c66b9",
+        "fbb76890-55fe-47b3-ad8a-334b38dea019",
+        "d8b8fa78-8ec6-4805-a2c2-f163be00d778",
+        "7ae296bd-93f9-40e9-8ac4-a36094688705",
+        "a28f95dd-53f6-431d-8b9e-dc658cc32fc0",
+        "5b5781b4-a198-4e2c-af69-cd6126928571",
+        "15cb3c00-d579-434e-84f0-33d428bbe632"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "54acf408-d785-4e04-8e3f-b38fbefacf00",
+    "f25fdd94-7b98-4d96-a4f3-2514e2e87397"
+  ]
+}

@@ -1,0 +1,166 @@
+<!-- contact -->
+{% for block in section.blocks %}
+  {% if block.type == 'contact' %}
+    <div class="contact">
+      <div class="container">
+        <h3 class="w3layouts_head">{{ block.settings.heading }}
+          <span>{{ block.settings.subheading }}</span>
+        </h3>
+        <p class="w3_para">{{ block.settings.description }}</p>
+        <div class="contact-main w3agile">
+          <div class="col-md-7 contact-left">
+            <div class="contact-bottom">
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                  required="">
+                <input
+                  type="email"
+                  class="no-mar"
+                  placeholder="Email"
+                  name="Email">
+                <textarea placeholder="Message" name="Message"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84008838347!2d-74.25818880297903!3d40.705831640339994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1465278069158"></iframe>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- find -->
+{% for block in section.blocks %}
+  {% if block.type == 'contact_detail' %}
+    <div class="ag-ft agileinfo">
+      <div class="container">
+        <div class="footre-main">
+          <h3 class="w3layouts_head">{{ block.settings.heading }}</h3>
+          <p class="w3_para">{{ block.settings.description }}</p>
+          <div class="ag-ft-bottom">
+            {% for block in section.blocks %}
+              {% if block.type == 'contact_detail_info' %}
+                <div class="col-md-4 ftr-grid">
+                  <span class="ftr-address-icons">
+                    <i class="fa fa-{{ block.settings.icon_class }}" aria-hidden="true"></i>
+                  </span>
+                  <div class="ftr-text">
+                    <h4>{{ block.settings.heading }}</h4>
+                    <p>
+                      <a href="{{ block.settings.detail_url }}">{{ block.settings.detail }}</a>
+                    </p>
+                    <p>
+                      <a href="{{ block.settings.detail_url }}">{{ block.settings.detail1 }}</a>
+                    </p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              {% endif %}
+            {% endfor %}
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+{% schema %}
+{
+  "name": "contact page",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "contact",
+      "name": "contact",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading",
+          "default": "Contact"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading",
+          "default": "Us"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+        }
+      ]
+    },
+    {
+      "type": "contact_detail",
+      "name": "contact detail",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading",
+          "default": "Find"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+        }
+      ]
+    },
+    {
+      "type": "contact_detail_info",
+      "name": "contact detail info",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon_class",
+          "label": "icon class"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "detail",
+          "label": "detail"
+        },
+        {
+          "type": "text",
+          "id": "detail1",
+          "label": "detail1"
+        },
+        {
+          "type": "url",
+          "id": "detail_url",
+          "label": "detail url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "contact page"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

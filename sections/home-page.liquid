@@ -1,0 +1,343 @@
+<body>
+  <!-- banner -->
+
+  {% for block in section.blocks %}
+    {% if block.type == 'banner-bottom' %}
+      <div class="banner-bottom">
+        <div class="container">
+          <h3 class="w3layouts_head">{{ block.settings.title }}
+            <span class="subtitle-text">{{ block.settings.subtitle }}</span>
+          </h3>
+          <p class="w3_para">{{ block.settings.description }}</p>
+          <div class="w3ls_banner_bottom_grids">
+            {% for block in section.blocks %}
+              {% if block.type == 'animation-banner' %}
+                <div class="col-md-4 agileits_banner_bottom_grid_left">
+                  <div class="agileinfo_banner_bottom_grid_l_grid">
+                    <i class="fa-solid fa-{{ block.settings.icon-class-text }}" aria-hidden="true"></i>
+                  </div>
+                  <h4>{{ block.settings.heading }}</h4>
+                  <p>{{ block.settings.description }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  {% for block in section.blocks %}
+    {% if block.type == 'special_deal' %}
+      <div class="agile-ser">
+        <div class="container">
+          <h3 class="w3layouts_head">{{ block.settings.title }}
+            <span>{{ block.settings.subtitle }}</span>
+          </h3>
+          <p class="w3_para">{{ block.settings.description }}</p>
+          <div class="agile-ser-tp">
+            {% for block in section.blocks %}
+              {% if block.type == 'special_deal_image' %}
+                <div class="col-md-4 w3-lft">
+                  <div class="w3agile_special_deals_grid_left_grid">
+                    {% if block.settings.image_special_deal != blank %}
+                      <img
+                        src="{{ block.settings.image_special_deal | image_url }}"
+                        class="img-responsive"
+                        alt=""
+                        loading="lazy"
+                        width="your_width_value"
+                        height="your_height_value">
+                    {% endif %}
+                  </div>
+                  <h4>{{ block.settings.heading }}</h4>
+                  <p>{{ block.settings.description }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  {% for block in section.blocks %}
+    {% if block.type == 'quicklink' %}
+      <!-- quicklinks -->
+      <div class="quicklinks-agile-info">
+        <div class="container">
+          <h3 class="w3layouts_head">{{ block.settings.title }}
+            <span>{{ block.settings.subtitle }}</span>
+          </h3>
+          <p class="w3_para">{{ block.settings.description }}</p>
+          <div class="all-quicklink-info">
+            {% for block in section.blocks %}
+              {% if block.type == 'quicklink_info' %}
+                <div class="quicklinks-agile-info-top">
+                  <div class="col-md-6 agile-info-top-left">
+                    <div class="w3agile_special_deals_grid_left_grid">
+                      {% if block.settings.image != blank %}
+                        <img
+                          src="{{ block.settings.image | image_url }}"
+                          class="img-responsive"
+                          alt=""
+                          loading="lazy"
+                          width="your_width_value"
+                          height="your_height_value">
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="col-md-6 agile-info-top-right">
+                    <h4>{{ block.settings.heading }}</h4>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link1 }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link2 }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link3 }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link4 }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link5 }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link6 }}</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        {{ block.settings.info_link7 }}</a>
+                    </li>
+
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% schema %}
+{
+  "name": "banner-info",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "banner-bottom",
+      "name": "banner bottom",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "subtitle"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description"
+        }
+      ]
+    },
+    {
+      "type": "animation-banner",
+      "name": "animation banner",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon-class-text",
+          "label": "icon-class-text"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+        }
+      ]
+    },
+    {
+      "type": "special_deal",
+      "name": "special deal",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "subtitle"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description"
+        }
+      ]
+    },
+    {
+      "type": "special_deal_image",
+      "name": "special_deal_image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_special_deal",
+          "label": "image special deal"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Ut purus ipsum, facilisis sit amet sollicitudin eget, maximus convallis metus. Sed tristique dapibus dapibus."
+        }
+      ]
+    },
+    {
+      "type": "quicklink",
+      "name": "quicklink",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "subtitle"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+        }
+      ]
+    },
+    {
+      "type": "quicklink_info",
+      "name": "quicklink info",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "info_link",
+          "label": "info link",
+          "default": "Party Locations"
+        },
+        {
+          "type": "text",
+          "id": "info_link1",
+          "label": "info link",
+          "default": "Catering & Food"
+        },
+        {
+          "type": "text",
+          "id": "info_link2",
+          "label": "info link",
+          "default": "Party Rentals & Sales"
+        },
+        {
+          "type": "text",
+          "id": "info_link3",
+          "label": "info link",
+          "default": "Party Supplies & Favors"
+        },
+        {
+          "type": "text",
+          "id": "info_link4",
+          "label": "info link",
+          "default": "Entertainment & Entertainers"
+        },
+        {
+          "type": "text",
+          "id": "info_link5",
+          "label": "info link",
+          "default": "Photographers & Videographers"
+        },
+        {
+          "type": "text",
+          "id": "info_link6",
+          "label": "info link",
+          "default": "Balloons & Flowers"
+        },
+        {
+          "type": "text",
+          "id": "info_link7",
+          "label": "info link",
+          "default": "Decor & Decorations"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "banner-info"
+    }
+  ]
+}
+{% endschema %}
+  {% style %}
+
+    .quicklinks-agile0info .quicklinks-agile-info-top:nth-child(3) {
+      display: flex !important;
+      flex-direction: row-reverse !important;
+    }
+
+  {% endstyle %}
+  {% stylesheet %}
+  {% endstylesheet %}
+
+  {% javascript %}
+  {% endjavascript %}

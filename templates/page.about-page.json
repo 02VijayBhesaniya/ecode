@@ -1,0 +1,223 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "9b06ba60-87e7-448a-b4fd-06a36d550f71": {
+      "type": "banner-for-services",
+      "blocks": {
+        "6f1a0f65-93fd-49c8-9e3e-2191d8a54de6": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "home",
+            "icon-class-text": "house-chimney",
+            "link": "shopify://pages/home"
+          }
+        },
+        "3237a38c-cf61-482f-a9ae-cc3f37ba6edc": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "services",
+            "icon-class-text": "cog",
+            "link": "shopify://pages/services"
+          }
+        },
+        "040bb6d0-d3fc-452c-a585-bfb2449690a3": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "about us",
+            "icon-class-text": "info-circle",
+            "link": "shopify://pages/about-us"
+          }
+        },
+        "8e8756da-5901-4693-81e3-fcdec7cd3b60": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "our work",
+            "icon-class-text": "building-o",
+            "link": "shopify://pages/work"
+          }
+        },
+        "72d80114-52ab-48f2-bf59-6aa6cfb29eb4": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "contact us",
+            "icon-class-text": "envelope-o",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "5b7b9ae6-6f01-4479-88b7-907527af3e69": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "facebook"
+          }
+        },
+        "ce71a725-f663-45bb-8eca-c0b7de9f019e": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "twitter"
+          }
+        },
+        "2b060cb8-0bc2-41e4-9c23-8aea9b294c78": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "dribbble"
+          }
+        },
+        "b3d7529e-2399-4b25-b65b-45b97a307c67": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "vimeo-v"
+          }
+        }
+      },
+      "block_order": [
+        "6f1a0f65-93fd-49c8-9e3e-2191d8a54de6",
+        "3237a38c-cf61-482f-a9ae-cc3f37ba6edc",
+        "040bb6d0-d3fc-452c-a585-bfb2449690a3",
+        "8e8756da-5901-4693-81e3-fcdec7cd3b60",
+        "72d80114-52ab-48f2-bf59-6aa6cfb29eb4",
+        "5b7b9ae6-6f01-4479-88b7-907527af3e69",
+        "ce71a725-f663-45bb-8eca-c0b7de9f019e",
+        "2b060cb8-0bc2-41e4-9c23-8aea9b294c78",
+        "b3d7529e-2399-4b25-b65b-45b97a307c67"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/banner.jpg"
+      }
+    },
+    "831e6112-a8d3-4c26-8e59-5c235dc7a093": {
+      "type": "about-page",
+      "blocks": {
+        "650a9ac1-9718-4ae1-b321-42bc392ce8b9": {
+          "type": "about",
+          "settings": {
+            "title": "Why Choose",
+            "subtitle": "Us",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+            "heading": "Pellentesque a ligula nec dui ornare pulvinar in non sem condimentum erat",
+            "paragraph": "In eleifend nisl fermentum bibendum euismod. Pellentesque ac mi quis tortor consequat scelerisque.",
+            "subparagraph": "Sed eros urna, rhoncus nec tortor quis, pretium vestibulum purus. Nunc quis augue nibh. Proin non enim non nulla scelerisque scelerisque vitae non est. Quisque iaculis leo at lacus malesuada mattis."
+          }
+        },
+        "ab2f7075-844a-4046-92e1-0b18d3f04fad": {
+          "type": "skillbar",
+          "settings": {
+            "heading": "Birthdays",
+            "heading_color": "#f1703a",
+            "heading_bg_color": "rgb(248, 140, 94)",
+            "width": "78%"
+          }
+        },
+        "cafa2cef-3cfb-449f-b762-e621808b074e": {
+          "type": "skillbar",
+          "settings": {
+            "heading": "Wedding",
+            "heading_color": "#2980b9",
+            "heading_bg_color": "rgb(52, 152, 219)",
+            "width": "54%"
+          }
+        },
+        "7f5d1831-70a9-4305-96f7-f386614c101a": {
+          "type": "skillbar",
+          "settings": {
+            "heading": "Corporate",
+            "heading_color": "#a0d034",
+            "heading_bg_color": "rgb(178, 236, 47)",
+            "width": "76%"
+          }
+        },
+        "926fe503-4165-4d8c-b0f7-c709c1d13686": {
+          "type": "skillbar",
+          "settings": {
+            "heading": "Parties",
+            "heading_color": "#e7cc2c",
+            "heading_bg_color": "rgb(245, 212, 16)",
+            "width": "80%"
+          }
+        },
+        "01181868-2760-4637-9dda-5e82bb1a11f4": {
+          "type": "about_bottom",
+          "settings": {
+            "heading": "Agriculture",
+            "subheading": "Not Only Gives Riches To A Nation, But The Only Riches She Can Call Her Own",
+            "button_text": "Read More"
+          }
+        },
+        "ce91e7ea-4a2b-4896-801b-1d781344033f": {
+          "type": "pop_up",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg"
+          }
+        },
+        "d6079d0f-63ce-4206-8fe6-a095b0f0b1c2": {
+          "type": "team",
+          "settings": {
+            "heading": "Our Amazing ",
+            "subheading": "Team",
+            "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+          }
+        },
+        "79b74262-cf2d-4223-99e1-d4424edc63ec": {
+          "type": "agile_info",
+          "settings": {
+            "image": "shopify://shop_images/t1.jpg",
+            "heading": "Andria Carl",
+            "description": "Field Manager"
+          }
+        },
+        "f54e995d-ca43-4791-92d3-be8886268b08": {
+          "type": "agile_info",
+          "settings": {
+            "image": "shopify://shop_images/t3.jpg",
+            "heading": "Laura Doe",
+            "description": "Decorator"
+          }
+        },
+        "c7bbb4bb-4615-44ec-b88f-4eb56df98322": {
+          "type": "agile_info",
+          "settings": {
+            "image": "shopify://shop_images/t4.jpg",
+            "heading": "Rosy Paul",
+            "description": "Co-Founder"
+          }
+        },
+        "5afb3a66-9414-422e-b102-6ac4048ca098": {
+          "type": "agile_info",
+          "settings": {
+            "image": "shopify://shop_images/t2.jpg",
+            "heading": "Christopher Lii",
+            "description": "Senior Staff"
+          }
+        }
+      },
+      "block_order": [
+        "650a9ac1-9718-4ae1-b321-42bc392ce8b9",
+        "ab2f7075-844a-4046-92e1-0b18d3f04fad",
+        "cafa2cef-3cfb-449f-b762-e621808b074e",
+        "7f5d1831-70a9-4305-96f7-f386614c101a",
+        "926fe503-4165-4d8c-b0f7-c709c1d13686",
+        "01181868-2760-4637-9dda-5e82bb1a11f4",
+        "ce91e7ea-4a2b-4896-801b-1d781344033f",
+        "d6079d0f-63ce-4206-8fe6-a095b0f0b1c2",
+        "79b74262-cf2d-4223-99e1-d4424edc63ec",
+        "f54e995d-ca43-4791-92d3-be8886268b08",
+        "c7bbb4bb-4615-44ec-b88f-4eb56df98322",
+        "5afb3a66-9414-422e-b102-6ac4048ca098"
+      ],
+      "settings": {
+        "image_bg": "shopify://shop_images/footer.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9b06ba60-87e7-448a-b4fd-06a36d550f71",
+    "831e6112-a8d3-4c26-8e59-5c235dc7a093"
+  ]
+}

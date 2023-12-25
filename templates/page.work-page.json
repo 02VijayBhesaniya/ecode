@@ -1,0 +1,220 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "68a05cf8-3ae4-449d-9f8d-0e5b7ea7e772": {
+      "type": "banner-for-services",
+      "blocks": {
+        "0ee73d3c-1ac4-4eb7-892d-34e10b9db293": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "facebook"
+          }
+        },
+        "6ae1060e-d1e6-4077-b337-38dc94d41d7a": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "twitter"
+          }
+        },
+        "6d17b294-8e74-4270-b00c-0fca237497d7": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "dribbble"
+          }
+        },
+        "d45ba018-77f2-48b0-a1e8-3dbd461df887": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "vimeo-v"
+          }
+        },
+        "86fb816e-0fd7-4866-aa3b-f8066dc6d303": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "home",
+            "icon-class-text": "house-chimney",
+            "link": "shopify://pages/home"
+          }
+        },
+        "a6266848-fbc6-4dde-9e14-9cc4a961b442": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "services",
+            "icon-class-text": "cog",
+            "link": "shopify://pages/services"
+          }
+        },
+        "619abb00-22f3-471c-9980-af4da4823454": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "about us",
+            "icon-class-text": "info-circle",
+            "link": "shopify://pages/about-us"
+          }
+        },
+        "4131b0ed-8996-411b-85af-8b04554f987d": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "our work",
+            "icon-class-text": "building-o",
+            "link": "shopify://pages/work"
+          }
+        },
+        "5a0163c0-14b9-45f6-8510-4d7b4691a2ed": {
+          "type": "menu_item",
+          "settings": {
+            "menu-text": "contact us",
+            "icon-class-text": "envelope-o",
+            "link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "0ee73d3c-1ac4-4eb7-892d-34e10b9db293",
+        "6ae1060e-d1e6-4077-b337-38dc94d41d7a",
+        "6d17b294-8e74-4270-b00c-0fca237497d7",
+        "d45ba018-77f2-48b0-a1e8-3dbd461df887",
+        "86fb816e-0fd7-4866-aa3b-f8066dc6d303",
+        "a6266848-fbc6-4dde-9e14-9cc4a961b442",
+        "619abb00-22f3-471c-9980-af4da4823454",
+        "4131b0ed-8996-411b-85af-8b04554f987d",
+        "5a0163c0-14b9-45f6-8510-4d7b4691a2ed"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/banner.jpg"
+      }
+    },
+    "4f5a4f01-e4b2-4d26-bac4-5152aaaf8fc0": {
+      "type": "work-page",
+      "blocks": {
+        "1967c6f9-3b42-4bd3-9e45-f827b48efbcc": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/12.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "3dcd923b-4d72-4e39-918e-bb2acbf6d30f": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "8e7e2aef-593a-44bf-bd43-45c5763c558f": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "78e38b1d-b241-40b0-9c6c-d14c5abd8561": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/9.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "6a1e8f83-c784-48f8-929e-868a9d508a9b": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/8.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "06bd1bf3-207b-492e-9c30-fac9a8b26681": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "7813846f-8125-4587-902b-d90ea6985ac2": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/6.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "06fb5736-3849-4c1a-a336-cdad235da2e2": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "0f537304-99c3-418e-977d-fa61cd1f9d87": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "284fdd7e-f255-4d68-ba64-3e89ba4e727e": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "b38ef486-e2b5-4a44-8506-23374cb17300": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        },
+        "29515426-4707-4483-ba14-9fb7e22821d4": {
+          "type": "work_page",
+          "settings": {
+            "image": "shopify://shop_images/1.jpg",
+            "heading": "Events",
+            "description": "Donec efficitur lacus sit amet sollicitudin finibus. Sed tristique nisi augue, sed elementum"
+          }
+        }
+      },
+      "block_order": [
+        "1967c6f9-3b42-4bd3-9e45-f827b48efbcc",
+        "3dcd923b-4d72-4e39-918e-bb2acbf6d30f",
+        "8e7e2aef-593a-44bf-bd43-45c5763c558f",
+        "78e38b1d-b241-40b0-9c6c-d14c5abd8561",
+        "6a1e8f83-c784-48f8-929e-868a9d508a9b",
+        "06bd1bf3-207b-492e-9c30-fac9a8b26681",
+        "7813846f-8125-4587-902b-d90ea6985ac2",
+        "06fb5736-3849-4c1a-a336-cdad235da2e2",
+        "0f537304-99c3-418e-977d-fa61cd1f9d87",
+        "284fdd7e-f255-4d68-ba64-3e89ba4e727e",
+        "b38ef486-e2b5-4a44-8506-23374cb17300",
+        "29515426-4707-4483-ba14-9fb7e22821d4"
+      ],
+      "settings": {
+        "heading": "Our",
+        "subheading": "Work",
+        "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "68a05cf8-3ae4-449d-9f8d-0e5b7ea7e772",
+    "4f5a4f01-e4b2-4d26-bac4-5152aaaf8fc0"
+  ]
+}

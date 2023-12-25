@@ -1,0 +1,99 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "ff3f5a5a-1d38-416f-950d-1763dd4699eb": {
+          "type": "menu_item",
+          "disabled": true,
+          "settings": {
+            "menu-text": "home",
+            "link": "#"
+          }
+        },
+        "fd97b311-13d6-4ea2-9963-f80d23e1600a": {
+          "type": "menu_item",
+          "disabled": true,
+          "settings": {
+            "menu-text": "services",
+            "link": "#"
+          }
+        },
+        "159997c5-d3ec-4834-bfd0-c3e0abac47d6": {
+          "type": "menu_item",
+          "disabled": true,
+          "settings": {
+            "menu-text": "about",
+            "link": ""
+          }
+        },
+        "b8db9310-e6eb-4fec-aced-1d9eca352650": {
+          "type": "menu_item",
+          "disabled": true,
+          "settings": {
+            "menu-text": "our work",
+            "link": ""
+          }
+        },
+        "a96fae86-e3f8-4de8-a198-1040c9fb651e": {
+          "type": "menu_item",
+          "disabled": true,
+          "settings": {
+            "menu-text": "contact us",
+            "link": "#"
+          }
+        },
+        "0ef784ec-a7ba-4270-9375-3efe1316e653": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "facebook"
+          }
+        },
+        "cfce02e0-e262-4a3b-a6df-4744664ec106": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "twitter"
+          }
+        },
+        "3a0d9eb5-9a57-44d9-b771-37e6bbd48d71": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "dribbble"
+          }
+        },
+        "40bccc38-73df-43bc-b2a9-e706e07f8be4": {
+          "type": "media_icon",
+          "settings": {
+            "media_icon_class_text": "vimeo-v"
+          }
+        }
+      },
+      "block_order": [
+        "ff3f5a5a-1d38-416f-950d-1763dd4699eb",
+        "fd97b311-13d6-4ea2-9963-f80d23e1600a",
+        "159997c5-d3ec-4834-bfd0-c3e0abac47d6",
+        "b8db9310-e6eb-4fec-aced-1d9eca352650",
+        "a96fae86-e3f8-4de8-a198-1040c9fb651e",
+        "0ef784ec-a7ba-4270-9375-3efe1316e653",
+        "cfce02e0-e262-4a3b-a6df-4744664ec106",
+        "3a0d9eb5-9a57-44d9-b771-37e6bbd48d71",
+        "40bccc38-73df-43bc-b2a9-e706e07f8be4"
+      ],
+      "settings": {
+        "image_bg": "shopify://shop_images/footer.jpg",
+        "submit_button": "shopify://shop_images/9.png",
+        "heading": "Events Planning",
+        "number": "(+000) 123 456 789",
+        "copyright_text": "© 2023 Events Planning. All rights reserved | Design by",
+        "company_name": "Event Planning",
+        "menu": "footer",
+        "image": "shopify://shop_images/arrow_1.png"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

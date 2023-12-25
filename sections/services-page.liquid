@@ -1,0 +1,356 @@
+<!-- services -->
+{% for block in section.blocks %}
+  {% if block.type == 'banner_bottom' %}
+    <div class="banner-bottom">
+      <div class="container">
+        <div class="agileits_heading_section">
+          <h3 class="w3layouts_head">{{ block.settings.heading }}
+            <span>{{ block.settings.subheading }}</span>
+          </h3>
+          <p class="w3_para">{{ block.settings.description }}</p>
+        </div>
+        <div class="w3ls_banner_bottom_grids">
+          {% for block in section.blocks %}
+            {% if block.type == 'banner_services' %}
+              <div class="col-md-4 agileits_services_grid">
+                <h3>{{ block.settings.heading }}</h3>
+                <p>{{ block.settings.description }}</p>
+                <div class="w3_agile_services_grid1">
+                  {% if block.settings.image != blank %}
+                    <img
+                      src="{{ block.settings.image | image_url }}"
+                      alt=" "
+                      class="img-responsive"
+                      loading="lazy"
+                      width="your_width_value"
+                      height="your_height_value" />
+                  {% endif %}
+                  <div class="w3_blur"></div>
+                </div>
+                <div class="w3layouts_more">
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#myModal">Read More<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //services -->
+
+<!-- offer -->
+{% for block in section.blocks %}
+  {% if block.type == 'offer' %}
+    <div class="offer">
+      <div class="container">
+        <div class="agileits_heading_section">
+          <h3 class="w3layouts_head">{{ block.settings.heading }}<span>{{ block.settings.subheading }}</span>
+          </h3>
+          <p class="w3_para">{{ block.settings.description }}</p>
+        </div>
+        <div class="w3ls_banner_bottom_grids se-btm">
+          {% for block in section.blocks %}
+            {% if block.type == 'banner_offer' %}
+              <div class="col-md-3 agile_offer_grid">
+                <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                    <p>{{ block.settings.number_background }}.</p>
+                  </div>
+                </div>
+                <div class="wthree_offer_grid1">
+                  <h4>{{ block.settings.heading }}</h4>
+                  <p class="w3_agileits_service_para">{{ block.settings.description }}</p>
+                </div>
+              </div>
+
+            {% endif %}
+          {% endfor %}
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //offer -->
+<!-- offer-bottom -->
+{% for block in section.blocks %}
+  {% if block.type == 'banner_bottom_second' %}
+    <div class="banner-bottom">
+      <div class="container">
+        <div class="col-md-4 w3l_services_footer_top_left">
+          {% if block.settings.image != blank %}
+            <img
+              src="{{ block.settings.image | image_url }}"
+              alt=" "
+              class="img-responsive"
+              loading="lazy"
+              width="your_width_value"
+              height="your_height_value" />
+          {% endif %}
+        </div>
+        <div class="col-md-8 w3l_services_footer_top_right">
+          {% for block in section.blocks %}
+            {% if block.type == 'banner_detail' %}
+              <div class="w3l_services_footer_top_right_main">
+                <div class="w3l_services_footer_top_right_main_l">
+                  <h3>{{ block.settings.heading }}</h3>
+                </div>
+                <div class="w3l_services_footer_top_right_main_l1">
+                  <div class="w3ls_service_icon">
+                    <i class="fa fa-{{ block.settings.icon-class }}" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="w3l_services_footer_top_right_main_r">
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#myModal">{{ block.settings.title }}</a>
+                  <p>{{ block.settings.description }}</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //offer-bottom -->
+<!-- bootstrap-pop-up -->
+{% for block in section.blocks %}
+  {% if block.type == 'pop_up' %}
+    <div
+      class="modal video-modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            Events Planning
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <section>
+            <div class="modal-body">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt=" "
+                  class="img-responsive"
+                  loading="lazy"
+                  width="your_width_value"
+                  height="your_height_value" />
+              {% endif %}
+              <p>Ut enim ad minima veniam, quis nostrum      
+ 
+							exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem 
+							vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam nihil molestiae consequatur, vel illum qui 
+							dolorem eum fugiat quo voluptas nulla pariatur.
+                <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit      
+ 
+								esse quam nihil molestiae consequatur.</i>
+              </p>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- //bootstrap-pop-up -->
+{% schema %}
+{
+  "name": "service page",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": "background image for offer"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner_bottom",
+      "name": "banner bottom",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+        }
+      ]
+    },
+    {
+      "type": "banner_services",
+      "name": "banner services",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Vivamus hendrerit non mauris eget consectetur. Sed placerat metus vitae nisi porttitor tristique. Sed iaculis dolor posuere posuere tincidunt."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        }
+      ]
+    },
+    {
+      "type": "offer",
+      "name": "offer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+        }
+      ]
+    },
+    {
+      "type": "banner_offer",
+      "name": "banner offer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number_background",
+          "label": "number for background"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Praesent nec blandit lorem, et facilisis mi. Ut fringilla massa massa,id consequat eros iaculis quis."
+        }
+      ]
+    },
+    {
+      "type": "banner_bottom_second",
+      "name": "banner bottom second",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        }
+      ]
+    },
+    {
+      "type": "banner_detail",
+      "name": "banner detail",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "icon-class",
+          "label": "icon class text"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Morbi sollicitudin odio massa, et rutrum sem rutrum in.Duis elementum turpis ultricies, finibus leo."
+        }
+      ]
+    },
+    {
+      "type": "pop_up",
+      "name": "pop_up",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "services page"
+    }
+  ]
+}
+{% endschema %}
+{% style %}
+  .offer {
+    background: url('{{ section.settings.image_bg | image_url }}') !important;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 750px;
+    background-attachment: fixed;
+    padding: 5em 0;
+  }
+{% endstyle %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

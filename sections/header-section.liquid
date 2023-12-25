@@ -1,0 +1,243 @@
+<div class="banner">
+  <div class="container">
+    <div class="w3_agile_menu">
+      <div class="agileits_w3layouts_nav">
+        <div id="toggle_m_nav">
+          <div id="m_nav_menu" class="m_nav">
+            <div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
+            <div class="m_nav_ham" id="m_ham_2"></div>
+            <div class="m_nav_ham" id="m_ham_3"></div>
+          </div>
+        </div>
+        <div id="m_nav_container" class="m_nav wthree_bg">
+          <nav class="menu menu--sebastian">
+            <ul id="m_nav_list" class="m_nav menu__list">
+              {% for link in section.settings.menu.links %}
+                {% if link.title contains '<i' or link.title contains '<i' %}
+                  {% assign img_url = link.title | split: '|' %}
+                  <li class="m_nav_item">
+                    <div class="mega_img_container">
+                      <a href="{{ link.url }}" class="link link--kumya">
+                        {{ img_url[1] }}
+                        <span class="menu_text" data-letters="{{ img_url[0] }}">{{ img_url[0] }}</span>
+                      </a>
+                    </div>
+                  </li>
+                {% else %}
+                  <li class="m_nav_item">
+                    <a href="{{ link.url }}" class="link link--kumya">
+                      <span class="menu_text" data-letters="{{ link.title }}">{{ link.title }}</span>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="agileits_w3layouts_logo">
+        <h1>
+          <a href="index.html">Events Planning</a>
+        </h1>
+      </div>
+      <div class="agileinfo_social_icons">
+        <ul class="agileits_social_list">
+          {% for block in section.blocks %}
+            {% if block.type == 'media_icon' %}
+              <li>
+                <a href="#" class="{{ block.settings.media_icon_class_text }}">
+                  <i class="fa fa-{{ block.settings.media_icon_class_text }}" aria-hidden="true"></i>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="clearfix"> </div> -->
+    <div class="w3ls_banner_info">
+      <section class="slider">
+
+        <div class="flexslider">
+          {% for block in section.blocks %}
+            {% if block.type == 'slider' %}
+              <div>
+                <h3>{{ block.settings.title }}</h3>
+                <p>{{ block.settings.description }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+
+      <script>
+             $(document).ready(function() {  
+              $('ul li').click(function(){  
+                $('li').removeClass("active");  
+                $(this).addClass("active");  
+            });  
+            });
+      </script>
+      <script>
+              $('.flexslider').slick({
+                dots: true,
+                infinite: true,
+                arrows:false,
+                autoplay:true,
+                autoplaySpeed:1000,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
+                
+              });
+      </script>
+    </div>
+
+  </div>
+</div>
+{% schema %}
+{
+  "name": "header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "background image"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "Header Menu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu_item",
+      "name": "menu item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu-text",
+          "label": "menu-text"
+        },
+        {
+          "type": "text",
+          "id": "icon-class-text",
+          "label": "icon-class-text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "link"
+        }
+      ]
+    },
+    {
+      "type": "media_icon",
+      "name": "media icon",
+      "settings": [
+        {
+          "type": "text",
+          "id": "media_icon_class_text",
+          "label": "media_icon_class_text"
+        }
+      ]
+    },
+    {
+      "type": "slider",
+      "name": "slider",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title",
+          "default": "Let professionals run your event!"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description",
+          "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi "
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "header-section"
+    }
+  ]
+}
+{% endschema %}
+{% style %}
+  .banner {
+    background: url('{{ section.settings.background_image | image_url }}') !important;
+    background-size: cover !important;
+    min-height: 750px;
+  }
+
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    content: '';
+    text-align: center;
+    font-family: 'Fontawasome';
+    opacity: .25;
+    color: white;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    background: deeppink;
+    color: deeppink;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    background: white;
+    border: 0;
+    outline: none;
+  }
+  .slick-dots {
+    position: absolute;
+    top: 12em;
+    display: block;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  #fa-icon {
+    font-size: 14px;
+  }
+  span.menu_text {
+    font-size: 14px;
+  }
+  span.subtitle-text {
+    font-size: inherit;
+  }
+
+{% endstyle %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
